@@ -1,0 +1,85 @@
+
+    :root{
+      --bg:#0b0f14; --card:#121824; --muted:#8aa0b6; --accent:#4c9fff; --text:#e6eef6; --border:#1e2a3a; --ok:#29c179; --warn:#ffb020; --err:#ff5a5a;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#000000 0%,#0e141d 100%);color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    main img{
+        width: 300px;  
+        height: auto; 
+    }
+    /* Layout */
+    .container{width:min(1120px,92%);margin-inline:auto}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:rgba(13, 17, 22, 0.7);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.3px}
+    .brand-logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7cc2ff);display:grid;place-items:center;color:#001e36;font-weight:800}
+    nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+    nav a{padding:.55rem .8rem;border-radius:.8rem;opacity:.9}
+    nav a:hover, nav a:focus{background:var(--card);opacity:1}
+    .nav-cta{border:1px solid var(--accent)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;padding:6rem 0 4rem}
+    .badge{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--border);padding:.35rem .6rem;border-radius:999px;color:var(--muted);font-size:.86rem}
+    .title{font-size:clamp(2rem,4.8vw,3.4rem);line-height:1.08;margin:.6rem 0 1rem}
+    .lead{color:#c8d6e5;max-width:56ch}
+    .cta-row{display:flex;gap:.8rem;margin-top:1.4rem;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:#031220;border:0;padding:.9rem 1.05rem;border-radius:1rem;font-weight:700}
+    .btn.ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+
+    /* Sections */
+    section{padding:4rem 0;border-top:1px solid var(--border)}
+    section h2{font-size:clamp(1.5rem,3.2vw,2.2rem);margin:0 0 .8rem}
+    .muted{color:var(--muted)}
+
+    /* Skills */
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .chip{border:1px solid var(--border);background:var(--card);padding:.75rem 1rem;border-radius:1rem;display:flex;align-items:center;justify-content:space-between}
+    .meter{height:8px;width:44%;background:#0a0f17;border-radius:999px;overflow:hidden;border:1px solid var(--border)}
+    .meter>span{display:block;height:100%;background:linear-gradient(90deg,#48a7ff,#92cbff)}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:1.2rem;overflow:hidden;display:flex;flex-direction:column}
+    .card img{aspect-ratio:16/10;object-fit:cover}
+    .card-body{padding:1rem}
+    .tag{font-size:.78rem;color:#b4c6d8;border:1px solid var(--border);padding:.25rem .5rem;border-radius:.6rem}
+    .card-footer{display:flex;gap:.6rem;padding:0 1rem 1rem}
+    .link{border:1px solid var(--border);padding:.55rem .8rem;border-radius:.8rem;display:inline-flex;align-items:center;gap:.4rem}
+
+    /* About */
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+    .about .panel{background:var(--card);border:1px solid var(--border);border-radius:1.2rem;padding:1.2rem}
+
+    /* Contact */
+    form{display:grid;gap:.9rem;margin-top:1rem}
+    .field{display:grid;gap:.4rem}
+    .field label{font-weight:600}
+    .field input,.field textarea{background:#0a0f17;border:1px solid var(--border);color:var(--text);padding:.8rem;border-radius:.8rem;outline:none}
+    .helper{font-size:.85rem;color:var(--muted)}
+    .error{font-size:.85rem;color:var(--err);display:none}
+    .toast{position:fixed;right:1rem;bottom:1rem;background:var(--card);border:1px solid var(--border);padding:1rem 1.2rem;border-radius:1rem;display:none}
+    .toast.ok{border-color:var(--ok)}
+
+    /* Footer */
+    footer{padding:2.2rem 0;color:#a8bacb}
+
+    /* Responsive */
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr}
+      .about{grid-template-columns:1fr}
+    }
+    @media (max-width:900px){
+      .projects{grid-template-columns:1fr 1fr}
+      .skills{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:560px){
+      .projects{grid-template-columns:1fr}
+      .skills{grid-template-columns:1fr}
+    }

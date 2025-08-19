@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Md. Nazrul Islam – Portfolio</title>
+  <meta name="description" content="Responsive personal portfolio of Md. Nazrul Islam – Front-end Developer. Projects, skills, and contact form." />
+  <meta name="keywords" content="Front-end Developer, HTML, CSS, JavaScript, Portfolio, Bangladesh" />
+  <meta name="author" content="Md. Nazrul Islam" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="P2.css">
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="Go to home">
+        <span class="brand-logo">NI</span>
+        <span>Md. Nazrul Islam</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="container hero">
+    <div>
+      <span class="badge">Front‑end Developer • HTML • CSS • JavaScript</span>
+      <h1 class="title">I build fast, accessible, responsive websites.</h1>
+      <p class="lead"> Hi there! I’m Nazrul, a front‑end developer from Bangladesh. I craft clean UI, semantic HTML, modern CSS layouts, and interactive JavaScript experiences optimized for performance and SEO.</p>
+      <div class="cta-row">
+        <a href="#projects" class="btn" aria-label="View projects">
+          <!-- icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 5v14m-7-7h14"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn ghost" aria-label="Contact me">Contact Me</a>
+      </div>
+    </div>
+    <div>
+      <img src="F.png" alt="Cover" />
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container about">
+      <div>
+        <h2>About Me</h2>
+        <p class="muted">I’m a detail‑oriented developer focused on building accessible, responsive UIs. I enjoy turning complex problems into simple, beautiful interfaces.</p>
+        <div class="panel" aria-label="Quick facts">
+          <ul>
+            <li>Location: Dhaka, Bangladesh</li>
+            <li>Services: Business card, Landing Pages, Portfolios, Forms, </li>
+            <li>Tech: HTML, CSS, Django basics</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel">
+        <h3 style="margin-top:0">Highlights</h3>
+        <ul>
+          <li>Semantic, SEO‑friendly markup</li>
+          <li>Performance‑first CSS (&lt;100KB total CSS/JS for this page)</li>
+          <li>Clean component structure and comments</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <p class="muted">A quick glance at my core front‑end skills.</p>
+      <div class="skills" role="list">
+        <div class="chip" role="listitem">HTML5 <span class="meter"><span style="width: 95%"></span></span></div>
+        <div class="chip" role="listitem">CSS3 <span class="meter"><span style="width: 92%"></span></span></div>
+        <div class="chip" role="listitem">JavaScript <span class="meter"><span style="width: 70%"></span></span></div>
+        <div class="chip" role="listitem">Responsive Design <span class="meter"><span style="width: 92%"></span></span></div>
+        <div class="chip" role="listitem">Accessibility <span class="meter"><span style="width: 85%"></span></span></div>
+        <div class="chip" role="listitem">SEO Basics <span class="meter"><span style="width: 78%"></span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="muted">Recent work and practice builds.</p>
+      <div class="projects">
+        <!-- Card 1 -->
+        <article class="card">
+          <img src="Bcard.jpg" alt="Bcard screenshot"/>
+          <div class="card-body">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem">
+              <h3 style="margin:0;font-size:1.1rem">Business Card</h3>
+              <span class="tag">HTML • CSS</span>
+            </div>
+            <p class="muted">Business card with responsive grid.</p>
+          </div>
+          <div class="card-footer">
+            <a class="link" href="https://nazrulugv47.github.io/Business_Card_HTML_CSS/" aria-label="Live demo">Live Demo</a>
+            <a class="link" href="https://github.com/nazrulugv47/Business_Card_HTML_CSS" aria-label="Source code">Source</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="Portfolio.JPG" alt="Portfolio screenshot"/>
+          <div class="card-body">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem">
+              <h3 style="margin:0;font-size:1.1rem">Personal Portfolio</h3>
+              <span class="tag">HTML, CSS, Responsive</span>
+            </div>
+            <p class="muted">Single‑page personal site with sticky nav, accessibility best practices, and fast load.</p>
+          </div>
+          <div class="card-footer">
+            <a class="link" href="https://nazrulugv47.github.io/HTML-CSS/" aria-label="Live demo">Live Demo</a>
+            <a class="link" href="https://github.com/nazrulugv47/HTML-CSS" aria-label="Source code">Source</a>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <img src="CV1.JPG" alt="CV screenshot"/>
+          <div class="card-body">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem">
+                <h3 style="margin:0;font-size:1.1rem">Curriculum Vitae</h3>
+                <span class="tag">HTML, CSS</span>
+              
+            </div>
+            <p class="muted">Simple dual page Curriculum Vitae</p>
+          </div>
+          <div class="card-footer">
+            <a class="link" href="https://nazrulugv47.github.io/Nazrul-s-Curriculum-vitae/" aria-label="Live demo">Live Demo</a>
+            <a class="link" href="https://github.com/nazrulugv47/Nazrul-s-Curriculum-vitae" aria-label="Source code">Source</a>
+            
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="muted">Have a project in mind? Send a quick message.</p>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required minlength="2" />
+          <span class="error" id="nameErr">Please enter at least 2 characters.</span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="youremail@gmail.com" required />
+          <span class="error" id="emailErr">Please enter a valid email address.</span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required minlength="10"></textarea>
+          <span class="error" id="messageErr">Message should be at least 10 characters.</span>
+          <span class="helper">Only demo. This form does not send emails.</span>
+        </div>
+        <button class="btn" type="submit" aria-label="Send message">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap">
+      <span>© <span id="year"></span> Md. Nazrul Islam. All rights reserved.</span>
+      <div style="display:flex;gap:.6rem">
+        <a class="link" href="https://github.com/nazrulugv47" aria-label="GitHub">GitHub</a>
+        <a class="link" href="https://www.linkedin.com/in/md-nazrul-islam-3bb305332/" aria-label="LinkedIn">LinkedIn</a>
+        <a class="link" href="https://nazrulugv47.github.io/Nazrul-s-Curriculum-vitae/" aria-label="Resume">Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast ok" role="status" aria-live="polite">Message sent (demo). I will get back to you soon!</div>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Form Validation (frontend only)
+    const form = document.getElementById('contactForm');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+
+    const nameErr = document.getElementById('nameErr');
+    const emailErr = document.getElementById('emailErr');
+    const messageErr = document.getElementById('messageErr');
+
+    function isEmail(v){
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    }
+
+    function show(el){ el.style.display = 'block'; }
+    function hide(el){ el.style.display = 'none'; }
+
+    function validate(){
+      let ok = true;
+      if(nameInput.value.trim().length < 2){ show(nameErr); ok = false; } else hide(nameErr);
+      if(!isEmail(emailInput.value.trim())){ show(emailErr); ok = false; } else hide(emailErr);
+      if(messageInput.value.trim().length < 10){ show(messageErr); ok = false; } else hide(messageErr);
+      return ok;
+    }
+
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      if(!validate()) return;
+      // Demo success toast
+      const toast = document.getElementById('toast');
+      toast.style.display = 'block';
+      setTimeout(()=> toast.style.display = 'none', 2600);
+      form.reset();
+    });
+  </script>
+
+  <!--
+  ======= Quick Edit Instructions =======
+  1) Replace text content (name, bio, services) in the About & Hero sections.
+  2) Swap project images/links in the Projects cards (use your own screenshots).
+  3) Update social links in the footer.
+  4) To deploy: drag-drop this file into Netlify, Vercel, or enable GitHub Pages.
+  5) Optional SEO: Update <title>, description, and add your own Open Graph tags.
+  -->
+</body>
+</html>
